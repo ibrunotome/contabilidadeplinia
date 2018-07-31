@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/*CSS Reset*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: top;
+}
+
+:focus {
+    outline: 0px;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* Configuração básica padrão para os elementos HTML entre os navegadores web. */
+/* --------------------------------------------------------------------------------------------- */
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    margin: 16px 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: bold;
+}
+
+abbr, acronym {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+em {
+    font-style: italic;
+}
+
+blockquote, ul, ol, dl {
+    margin: 16px;
+}
+
+ol, ul, dl {
+    margin-left: 32px;
+}
+
+ol li {
+    list-style: decimal outside;
+}
+
+ul li {
+    list-style: square;
+    text-align: left;
+}
+
+dl dd {
+    margin-left: 16px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+}
+
+caption {
+    margin-bottom: 8px;
+    text-align:center;
+}
+
+fieldset, table {
+    margin-bottom: 16px;
+}
+
+hr {
+background-color:#eee;
+border-width:0;
+color:#eee;
+height:1px;
+width:100%;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	color: #fff;
+}
+
+a:active{
+	color: #fff;
+}
+
+p{
+	text-align: justify;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+/*Fim do CSS Reset*/
+
+/* layout inicial*/
+
+body{
+	background-attachment: fixed;
+	background-color: #D0CEC4;
+	background-image: url("../images/bg_geral.jpg");
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+#topo{
+	width: 100%;
+	background: url("../images/bg_topo.jpg");
+}
+
+#topo img{
+	width: 100%;
+}
+
+#menu_geral{
+	background: #000;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 15px;
+	color: #fff;
+	display: inline-block;
+}
+
+#menu_individual{
+	min-width: 12%;
+	text-align: center;
+	display: inline-block;
+}
+
+#menu_individual:hover{
+	background: #555;
+	display: inline-block;
+}
+
+#menu_individual_pressionado{
+	background: #555;
+	width: 12%;
+	text-align: center;
+	display: inline-block;
+}
+
+#corpo{
+	width: 80%;
+	min-height: 600px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 1%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+	background: #fff;
+}
+
+#titulo{
+	font-style: italic;
+	text-align: left;
+	font-size: 20px;
+}
+
+#servicos_left{
+	width: 50%;
+	text-align: left;
+    font-size: 14px;
+	float: left;
+}
+
+#servicos_right{
+	width: 50%;
+	text-align: left;
+    font-size: 14px;
+	float: right;
+}
+
+#mais_detalhes{
+	text-align: justify;
+    font-size: 14px;
+}
+
+#documentos{
+	width: 49%;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#documentos a{
+	color: #0000ff;
+}
+
+#funcionarios{
+	width: 100%;
+	text-align: justify;
+    font-size: 14px;
+}
+
+#funcionarios_plinia{
+	width: 100%;
+	display: inline-block;
+}
+
+#funcionarios_plinia img{
+	border-radius: 8px;
+	margin-left: 15px;
+}
+
+#contato_left{
+	width: 49%;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: inline-block;
+}
+
+#contato_left a{
+	text-decoration: underline;
+	color: #000;
+}
+
+input{
+	width: 50%;
+}
+
+textarea{
+	width: 50%;
+	height: 100px;
+}
+
+#arquivo{
+	display: inline-block;
+}
+
+input.arquivo{
+	width: 60%;
+	display: inline-block;
+}
+
+#contato_right{
+	width: 49%;
+	text-align: left;
+	font-family: sans-serif;
+	font-size: 14px;
+	display: inline-block;
+}
+
+img.acende {
+	opacity: 1.0; 
+	-moz-opacity: 1.0;
+	Filter: Alpha(Opacity=100);
+}
+
+img.acende:hover {
+	opacity: 0.7; 
+	-moz-opacity: 0.7;
+	Filter: Alpha(Opacity=70);
+}
+
+#galeria{
+	width: 23.5%;
+	margin-right: 0.5%;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	display: inline-block;
+}
+
+#galeria a img{
+	width: 100%;
+}
+
+#links_uteis{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 1%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+	background-color: #fff;
+}
+
+#links_uteis_left{
+	width: 28%;
+	padding: 5px;
+	margin: 5px;
+	text-align: justify;
+	display: inline-block;
+}
+
+#links_uteis_left img{
+	display: inline-block;
+	width: 100%;
+}
+
+#links_uteis a{
+	text-decoration: underline;
+	color: #000;
+}
+
+#links_uteis_center{
+	width: 28%;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
+	display: inline-block;
+}
+
+#links_uteis_center img{
+	width: 45%;
+}
+
+#rodape{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	font-size: 12px;
+	clear: both;
+}
